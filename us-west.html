@@ -44,31 +44,15 @@
 		  map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 		  directionsDisplay1.setMap(map);
 		  directionsDisplay2.setMap(map);
-		  directionsDisplay3.setMap(map);
-		  directionsDisplay4.setMap(map);
-		  directionsDisplay5.setMap(map);
-		  directionsDisplay6.setMap(map);
 		}
 
 		function calcRoute(start, end, routes) {
 		  switch (start) {
-		  	case "Grand Canyon National Park Lodges, 88 Village Loop Drive, Grand Canyon Village, AZ 86023":
+		  	case "Park City, UT":
 		  		directionsDisplay1 = new google.maps.DirectionsRenderer(directionsDisplayOptions);
 		  		break;
-		  	case "Graceland, Elvis Presley Boulevard, Memphis, TN":
+		  	case "San Andreas Fault, CA":
 		  		directionsDisplay2 = new google.maps.DirectionsRenderer(directionsDisplayOptions);
-		  		break;
-		  	case "Mount Vernon, Fairfax County, Virginia":
-		  		directionsDisplay3 = new google.maps.DirectionsRenderer(directionsDisplayOptions);
-		  		break;
-		  	case "USS Constitution, Boston, MA":
-		  		directionsDisplay4 = new google.maps.DirectionsRenderer(directionsDisplayOptions);
-		  		break;
-		  	case "Lincoln Home National Historic Site Visitor Center, 426 South 7th Street, Springfield, IL":
-		  		directionsDisplay5 = new google.maps.DirectionsRenderer(directionsDisplayOptions);
-		  		break;
-		  	case "Glacier National Park, 64 Grinnell Drive, West Glacier, MT 59936":
-		  		directionsDisplay6 = new google.maps.DirectionsRenderer(directionsDisplayOptions);
 		  		break;
 		  }
 		  
